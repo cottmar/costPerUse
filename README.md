@@ -1,3 +1,99 @@
+# Cost Per Use
+
+The Cost Per Use app is a tool for users that show the total cost per use of an item instead of looking at the total cost. Users will be able to assess which items were a good investment, or determine which items may not have been worth buying.
+
+## Features
+
+* A database for your items
+* The original price paid, photo, functional use of item
+* A counter showing the amount of times a user has used/worn an item, with an updated cost per use dollar amount
+* Editable pluses and minuses to estimate cost per use
+* Sorting: lowest cost per use, highest cost per use, best buys, worst buys, frequently used
+* Categories: Clothing, tools, kitchen, pet items, etc. 
+
+## Stretch Goals
+
+* feature to mark an item sold, calculating what amount it sold for, further giving user an accurate amount of their monetary investment.
+* Once an item is sold, archive item
+* Cost of owning/renting/leasing to find what is the best option for a user
+
+## Getting Started
+
+TBD
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Give examples
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+Say what the step will be
+
+```
+Give the example
+```
+
+And repeat
+
+```
+until finished
+```
+
+End with an example of getting some data out of the system or using it for a little demo
+
+## Running the tests
+
+Explain how to run the automated tests for this system
+
+### Break down into end to end tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+## Deployment
+
+Add additional notes about how to deploy this on a live system
+
+## Built With
+
+* [ReactJS](https://reactjs.org) - The web framework used
+* [NodeJS](https://nodejs.org/en/) - Javascript Runtime Environment
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+
+## Author
+
+* **Cara Ottmar** - *Initial work* - [cottmar](https://github.com/cottmar)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* Inspired by a need to buy less, and invest in quality pieces I will use over and over. 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,27 +133,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
 ### Deployment
 
