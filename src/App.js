@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LoginButton from './containers/Auth/login';
+import LogoutButton from './containers/Auth/logout';
+import { useAuth0 } from '@auth0/auth0-react';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const {
+    isLoading,
+    isAuthenticated,
+    error,
+    user,
+    loginWithRedirect,
+    logout
+  } = useAuth0();
 
-export default App;
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Oops...{error.message}</div>;
+  }
+
+  if (isAuthenticated) {
+    return (
+      <div> Hello!
+        <button
+          onClick={() => logout({ returnTo: window.location.origin })}
+        >
+        Log Out
+        </button>
+      </div>
+    );
+    } else {
+      return <button onClick={loginWithRedirect}>Login</button>
+    }
+  }
+
+  export default App;
